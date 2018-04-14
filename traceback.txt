@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 73, in script
+    if flag and social:
+  File "game/script.rpy", line 73, in <module>
+    if flag and social:
+NameError: name 'gamelab' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 73, in script
+    if flag and social:
+  File "C:\Users\user\Documents\renpy-6.99.14.2-sdk\renpy\ast.py", line 1729, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Users\user\Documents\renpy-6.99.14.2-sdk\renpy\python.py", line 1919, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\user\Documents\renpy-6.99.14.2-sdk\renpy\python.py", line 1912, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 73, in <module>
+    if flag and social:
+NameError: name 'gamelab' is not defined
+
+Windows-8-6.2.9200
+Ren'Py 6.99.14.3.3347
+Welcome to VGDC 1.0
+Fri Apr 13 23:03:00 2018
