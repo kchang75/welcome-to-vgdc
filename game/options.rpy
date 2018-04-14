@@ -18,7 +18,7 @@ define config.name = _("Welcome to VGDC")
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## The version of the game.
@@ -36,7 +36,7 @@ Art by: taro
 
 Coded by: krust
 
-Music by: google jk youtube
+Music by: klingtheposter@youtube
 """)
 
 
@@ -52,9 +52,9 @@ define build.name = "WelcometoVGDC"
 ## These three variables control which mixers are shown to the player by
 ## default. Setting one of these to False will hide the appropriate mixer.
 
-define config.has_sound = True
+define config.has_sound = False
 define config.has_music = True
-define config.has_voice = True
+define config.has_voice = False
 
 
 ## To allow the user to play a test sound on the sound or voice channel,
@@ -68,7 +68,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "mii channel music.webm"
 
 
 ## Transitions #################################################################
@@ -149,7 +149,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "WelcometoVGDC-1523346563"
+define config.save_directory = "WelcometoVGDC-saves"
 
 
 ## Icon ########################################################################

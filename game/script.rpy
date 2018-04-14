@@ -38,7 +38,7 @@ label start:
 
     t "First of all, the Video Game Development club (if you can't tell by the name) is a club about making games!"
 
-    t "We like video games so much that we'd like to make it into a career."
+    t "We like video games so much that we want to do it for a living."
 
     t "The point of the VGDC is to make games together in order to learn useful skills for the future."
 
@@ -60,11 +60,18 @@ label start:
 
     t "Our goal is to finish this game by the end of the semester, so we can start new projects in Fall!"
 
+    hide pegu
+    with dissolve
+
+    t "So time for questions!"
+
+
     jump choices
     
 label choices:
     
-    t "So time for questions!"
+    if lab and social:
+        jump end
 
     menu:
 
@@ -72,6 +79,7 @@ label choices:
 
         "Game labs" if not lab:
             jump gamelabs
+
         "Socials" if not social:
             jump socials
 
@@ -86,17 +94,19 @@ label socials:
 
     t "Anyways, the VGDC holds several social events during the school year..."
 
-    scene bg jackbox
+    scene bg party
     with fade
 
+    t "where we play games and have fun!"
+
     show tuffy at left
-    with move
+    with dissolve
 
-    t "where we play games!"
+    t "Occasionally, we'll have parties in the Titan Student Union, where there's lots provided for us!"
 
-    t "Members are encouraged to bring any games with them that they would like to play with our club."
+    t "Members can also bring their own games with them if they so wish."
 
-    t "Current games in our library include the Jackbox Party Pack, Mario Kart 8, Pokken, ... and more!"
+    t "Current games in our library include the Jackbox Party Pack, Mario Kart 8, Pokken, Cards Against Humanity ... and more!"
 
     t "So we don't just make games, but we play them as well!"
 
@@ -111,9 +121,10 @@ label gamelabs:
     scene bg gamelab
     with fade
 
-    show tuffy at left
-
     t "Game labs are weekly meetings where our club gets together in a lab in the Computer Science Department."
+
+    show tuffy at left
+    with dissolve
 
     t "Everyone uses this time to work on the game and communicate with other members."
 
@@ -122,7 +133,6 @@ label gamelabs:
     t "Making games is more fun when it's a collaborative effort!"
 
     jump choices
-
 
 label haloween:
 
@@ -144,7 +154,9 @@ label collaborations:
 
 label end:
 
+    scene bg titanwalk
     show tuffy
+    with fade
 
     t "Well that's all I have to say for now!"
 

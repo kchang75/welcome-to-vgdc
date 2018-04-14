@@ -1,5 +1,5 @@
 ﻿################################################################################
-## Initialization
+## faInitialization
 ################################################################################
 
 ## The init offset statement causes the initialization statements in this file
@@ -79,7 +79,7 @@ define gui.label_text_size = 24
 define gui.notify_text_size = 16
 
 ## The size of the game's title.
-define gui.title_text_size = 50
+define gui.title_text_size = 80
 
 
 ## Main and Game Menus #########################################################
